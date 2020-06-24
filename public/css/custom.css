@@ -1,0 +1,206 @@
+.gameTitle{
+    font-family: 'Metal Mania', cursive;
+    font-size: 60px;
+    letter-spacing: 0.12em;
+}
+
+#canvas-2d {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    cursor: crosshair;
+    background-color: rgba(135, 206, 235, 0.15);
+}
+
+body, html{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+ul{ padding: 0; }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.canvasDiv {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#start-screen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+#input_container {
+    text-align: center;
+    width:100%;
+}
+
+.single {margin: 0 auto;}
+.single .slick-next { right: 20px; z-index: 100;}
+.single .slick-prev { left: 20px; z-index: 100;}
+.single .slick-next::before ,
+.single .slick-prev::before { font-size: 30px;}
+.modaal-content-container { padding:0; }
+.modaal-container { background-color: #444; padding: 0 10px 10px;}
+.content{ width: 500px; height:430px;}
+.tankName {
+    margin-top:3%;
+    color:white;
+    font-weight: bold;
+    font-size:25px;
+    text-align: center;
+}
+.ability {
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 auto 1%;
+    font-weight: bold;
+    width: 70%;
+    height:10%;
+    font-size:22px;      
+    color:white;
+}
+.abilityDescription {
+    text-align: justify;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 60%;
+    height:22%;
+    padding:10px;
+    font-weight: bold;
+    font-size:16px;      
+    color:white;
+}
+.tankSelect {
+    font-weight: bold;
+    font-size:16px;
+    line-height: 100%;
+    display:block;
+    margin: 0 auto;
+    width: 17%;
+    height: 1.9em;
+}
+
+#nickname{ text-align: center; }
+.errorMsg {
+    line-height: 1em;
+    text-align: center;
+    height: 1em;
+    font-size: 16px;
+    color: rgba(120, 0, 0, 1);
+    margin:7px auto;
+}
+.block {
+    font-size:15px;
+    width:200px;
+    height:35px;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+}
+#showTankType {
+    margin-bottom: 30px;
+}
+
+.thumb {
+    z-index: 100;
+    padding:0;
+    margin: 10px auto;
+}
+
+.thumbImg {
+    width:  60px;
+    height: 30px; 
+    object-fit: contain;
+    margin: 2px;
+    position: relative;
+}
+.thumbImg img {
+    opacity: 0.2;
+}
+.thumb .slick-current img{
+    opacity: 1;
+}
+
+.help {
+    margin: 0;
+    margin-left: -10px;
+    margin-bottom: -20px;
+    width: 450px;
+    height: 550px;
+    color:white;
+    font-size:16px;
+    padding:20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.help p {
+    line-height: 1em;
+    padding-left: 20px;
+    margin-top:0;
+    margin-bottom: 1.6em;
+}
+.help p:last-child {
+    margin-bottom: 0;
+}
+.pCenter {
+    text-align: center;
+}
+
+#showHelp {
+    border-radius:50%;
+    width:20px;
+    height:20px;
+    line-height: 1em;
+    text-align: center;
+    margin:0;
+    padding:0;
+    border:0;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+#start-button{
+    margin-bottom: 30px;
+}
+
+.copyright {
+    font-size: 18px;
+    margin:0;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+.soundButton {
+    width: 45px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    font-size:16px;
+    padding-left:10px;
+    z-index: 15;
+    position: absolute;
+    left:10px;
+    bottom:10px;
+}
+.soundButton:focus {
+    outline:0;
+}
